@@ -1,8 +1,14 @@
 .site-header {
-	margin-bottom: 4em;
+	margin-bottom: 3em;
 }
 
 .blog {
+	.site-header {
+		margin-bottom: 0;
+	}
+}
+
+.page-template-about {
 	.site-header {
 		margin-bottom: 0;
 	}
