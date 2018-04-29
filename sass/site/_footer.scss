@@ -2,5 +2,25 @@
 	padding: 4rem 0;
     margin-top: 4rem;
     background-color: $footer-bg;
-    color: $light;
+    color: $white;
+
+    h3 {
+    	font-size: 1.2rem;
+    	text-transform: uppercase;
+    	font-weight: 700;
+    	margin-bottom: 1.5rem;
+    }
+
+    .tagcloud,
+	.textwidget,
+	.calendar_wrap {
+		padding: 0;
+	}
+
+	ul {
+		padding: 0;
+		list-style: none;
+
+
+	}
 }

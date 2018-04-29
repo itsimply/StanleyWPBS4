@@ -40,6 +40,7 @@ get_header(); ?>
 	</div>  <!--  .banner -->
 
 
+	<div class="home-projects">
 		<div class="container">
 			<div class="row mt-5">
 				<?php 
@@ -71,7 +72,7 @@ get_header(); ?>
 			</div> <!-- /.row -->
 			
 		</div> <!-- /.container -->
-
+	</div><!--  .home-projects -->
 
 <?php
 get_footer();

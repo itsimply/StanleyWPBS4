@@ -1,0 +1,37 @@
+//Project Items
+.project {
+	margin-bottom: 2rem;
+	h2 {
+		font-size: $font-size-base;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 500;
+
+		a {
+			color: $gray-700;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.post-thumbnail {
+		background: $custom;
+
+		img {
+			opacity: 1;
+			transition: .3s ease-in-out;
+
+			&:hover {
+				opacity: .5;
+			}
+
+			@include media-breakpoint-down(sm) { 
+				width: 100%; 
+			}
+		}
+
+
+	}
+}

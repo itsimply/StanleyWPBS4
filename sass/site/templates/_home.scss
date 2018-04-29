@@ -1,4 +1,15 @@
 .banner {
 	background-color: $gray-200;
-	padding: 3rem 0; 
+	padding: 5rem 0;
+
+
+	h1 {
+		margin: .5rem 0 1rem;
+	}
 }
+
+// Homepage projects padding
+.home-projects {
+	padding: 3rem 0;
+}
+
