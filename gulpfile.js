@@ -49,13 +49,14 @@ gulp.task('zip', function () {
    './inc/**/*',
    './js/**/*',
    './languages/*',
+   './plugin-activation/**/*',
    './sass/**/*',
    './template-parts/*',
    './templates/*',
    '!bower_components',
    '!node_modules',
   ], {base: "."})
-  .pipe(zip('StanleyWP.zip'))
+  .pipe(zip('stanleywp.zip'))
   .pipe(gulp.dest('.'));
 });
  
