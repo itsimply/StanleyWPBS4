@@ -6888,12 +6888,10 @@ a.text-dark:hover, a.text-dark:focus {
     background: #1abc9c; }
     .project .post-thumbnail img {
       opacity: 1;
-      transition: .3s ease-in-out; }
+      transition: .3s ease-in-out;
+      width: 100%; }
       .project .post-thumbnail img:hover {
         opacity: .5; }
-      @media (max-width: 767.98px) {
-        .project .post-thumbnail img {
-          width: 100%; } }
 
 /*--------------------------------------------------------------
 ## Comments

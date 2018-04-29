@@ -38,7 +38,7 @@ if (class_exists('Kirki'))  {
     'description'    => esc_attr__( 'Setting for my projects', 'stanleywp' ),
     // 'panel'          => 'projects_panel',
     'priority'       => 160,
-) );
+	) );
 
 	Kirki::add_field( 'stanleywp_theme', array(
 	'type'     => 'text',
@@ -47,8 +47,79 @@ if (class_exists('Kirki'))  {
 	'section'  => 'projects_section',
 	'default'  => esc_attr__( 'Projects', 'stanleywp' ),
 	'priority' => 10,
-) );
+	) );
 
+	Kirki::add_field( 'stanleywp_theme', array(
+	'type'        => 'select',
+	'settings'    => 'project_items',
+	'label'       => __( 'Project Items', 'stanleywp' ),
+	'section'     => 'projects_section',
+	'default'     => '4',
+	'priority'    => 10,
+	'multiple'    => 1,
+	'choices'     => array(
+		'6' => esc_attr__( '2 Items', 'stanleywp' ),
+		'4' => esc_attr__( '3 Items', 'stanleywp' ),
+		'3' => esc_attr__( '4 Items', 'stanleywp' ),
+		'2' => esc_attr__( '6 Items', 'stanleywp' ),
+		),
+		) );
+
+
+	/* Typography */
+
+	Kirki::add_section( 'typography_section', array(
+    'title'          => esc_attr__( 'typography Settings', 'stanleywp' ),
+    'description'    => esc_attr__( 'TypographySetting for my projects', 'stanleywp' ),
+    // 'panel'          => 'projects_panel',
+    'priority'       => 160,
+	) );
+
+	// Kirki::add_field( 'stanleywp_theme', array(
+	// 'type'        => 'typography',
+	// 'settings'    => 'typography_setting',
+	// 'label'       => esc_attr__( 'Typography', 'stanleywp' ),
+	// 'section'     => 'typography_section',
+	// 'default'     => array(
+	// 	'font-family'    => 'Roboto',
+	// 	'variant'        => 'regular',
+	// 	'font-size'      => '14px',
+	// 	'line-height'    => '1.5',
+	// 	'letter-spacing' => '0',
+	// 	'color'          => '#333333',
+	// 	'text-transform' => 'none',
+	// 	'text-align'     => 'left',
+	// ),
+	// 'priority'    => 10,
+	// 'output'      => array(
+	// 	array(
+	// 		'element' => 'body',
+	// 	),
+	// ),
+	// 	) );
+
+	// Kirki::add_field( 'stanleywp_theme', array(
+	// 'type'        => 'typography',
+	// 'settings'    => 'typography_heading_setting',
+	// 'label'       => esc_attr__( 'Typography Heading', 'stanleywp' ),
+	// 'section'     => 'typography_section',
+	// 'default'     => array(
+	// 	'font-family'    => 'Roboto',
+	// 	'variant'        => 'regular',
+	// 	'font-size'      => '14px',
+	// 	'line-height'    => '1.5',
+	// 	'letter-spacing' => '0',
+	// 	'color'          => '#333333',
+	// 	'text-transform' => 'none',
+	// 	'text-align'     => 'left',
+	// ),
+	// 'priority'    => 10,
+	// 'output'      => array(
+	// 	array(
+	// 		'element' => array('h1','h2','h3','h4','h5','h6','.h1','.h2','.h3','.h4','.h5','.h6' ),
+	// 	),
+	// ),
+	// 	) );
 
 	/* General Settings */
 

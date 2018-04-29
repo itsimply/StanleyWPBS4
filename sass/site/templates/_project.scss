@@ -22,13 +22,13 @@
 		img {
 			opacity: 1;
 			transition: .3s ease-in-out;
-
+			width: 100%; 
 			&:hover {
 				opacity: .5;
 			}
 
 			@include media-breakpoint-down(sm) { 
-				width: 100%; 
+				
 			}
 		}
 
